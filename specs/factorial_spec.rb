@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative '../solver'
 
 describe Solver do
@@ -28,7 +26,7 @@ describe Solver do
     end
 
     it 'raises an error when given a negative number' do
-      expect { solver.factorial(-1) }.to raise_error('n must be greater than or equal to 0')
+      expect { solver.factorial(-1) }.to raise_error('number must be greater than or equal to 0')
     end
   end
 end
